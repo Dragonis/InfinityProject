@@ -6,27 +6,31 @@
   {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
 
+    <ul>
+        <li ng-repeat="bohater in Hero">
+            Nick: <input type="text" ng-model="bohater.nick"> </input> <br>
+            Płeć:
+            <input type="radio" name="bohater.plec" ng-model="bohater.plec" value="Kobieta"> Kobieta </input>
+            <input type="radio" name="bohater.plec" ng-model="bohater.plec" value="Mężczyzna"> Mężczyzna </input> <br>
+            Rasa:
+            <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Człowiek"> Człowiek </input>
+            <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Elf"> Elf </input>
+            <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Demon"> Demon </input>
+            <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Ork"> Ork </input>
+            <br>
+            Siła: {{ bohater.sila }}
+            <button ng-click="bohater.dodajwSile();">+</button>
+            <button ng-click="bohater.odemijwSile();">-</button> <br>
+            Zręczność: {{ bohater.zrecznosc }} <br>
+            Inteligencja: {{ bohater.inteligencja }} <br>
+            Witalność: {{ bohater.witalnosc }} <br>
 
-     Nick: <input type="text" ng-model="bohater.nick"> </input> <br>
-     Płeć:
-     <input type="radio" name="bohater.plec" ng-model="bohater.plec" value="Kobieta"> Kobieta </input>
-     <input type="radio" name="bohater.plec" ng-model="bohater.plec" value="Mężczyzna"> Mężczyzna </input> <br>
-     Rasa:
-    <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Człowiek"> Człowiek </input>
-    <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Elf"> Elf </input>
-    <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Demon"> Demon </input>
-    <input type="radio" name="bohater.rasa" ng-model="bohater.rasa" value="Ork"> Ork </input>
-    <br>
-     Siła: {{ bohater.sila }}
-    <button ng-click="bohater.dodajwSile()">+</button>
-    <button ng-click="bohater.odemijwSile()">-</button> <br>
-     Zręczność: {{ bohater.zrecznosc }} <br>
-     Inteligencja: {{ bohater.inteligencja }} <br>
-     Witalność: {{ bohater.witalnosc }} <br>
+            Walka wręcz: {{ bohater.walka_wrecz }} <br>
+            Kamehameha: {{ bohater.kamehameha }} <br><br>
+            Przykladowe dane:<br>
+            <tt>{{ bohater | json}}</tt> <br><br>
+        </li>
+    </ul>
 
-    Walka wręcz: {{ bohater.walka_wrecz }} <br>
-    Kamehameha: {{ bohater.kamehameha }} <br><br>
-    Przykladowe dane:<br>
-    <tt>{{ bohater | json}}</tt> <br><br>
 
 </div>

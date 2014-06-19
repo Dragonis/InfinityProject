@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "nick": "abecadlo",
+      "plec": "kobieta",
+      "rasa": "człowiek",
+      "sila": 666,
+      "zrecznosc": 5,
+      "inteligencja": 4,
+      "witalnosc": 4,
+      "walka_wrecz": 1,
+      "kamehameha": 1
+    },
+    {
+        "id": 2,
+        "nick": "abc",
+        "plec": "test",
+        "rasa": "test",
+        "sila": 999,
+        "zrecznosc": 2,
+        "inteligencja": 3,
+        "witalnosc": 1,
+        "walka_wrecz": 5,
+        "kamehameha": 6
+    }
+
+]
