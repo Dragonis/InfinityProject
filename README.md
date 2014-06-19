@@ -1,4 +1,1 @@
-InfinityProject
-===============
-
-InfinityProject
+InfinityProject by Dragonis
